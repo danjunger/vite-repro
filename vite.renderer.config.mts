@@ -5,6 +5,8 @@ import lwc from "vite-plugin-lwc";
 // https://vitejs.dev/config
 export default defineConfig({
   plugins: [
-    lwc(),
+    lwc({
+      enableDynamicComponents: true
+    }),
   ]
 });

@@ -1,10 +1,5 @@
 <template>
         <div>Hello LWC World</div>
-        <div>My prop is {myProp}</div>
-
-        <lightning-card  title="Hello">
-                <lightning-button label="New" slot="actions"></lightning-button>
-                <p class="slds-p-horizontal_small">Card Body (custom component)</p>
-                <p slot="footer">Card Footer</p>
-        </lightning-card>
+        <lwc:component lwc:is={myComponent}></lwc:component>
+        <button onclick={handleToggle}>Toggle Component</button>
 </template>
